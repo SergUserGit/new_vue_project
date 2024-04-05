@@ -1,20 +1,17 @@
 <template>
   <Header />
-  <HeroTitle />
-  <HeroPrice />
+  <Hero />
 </template>
 
 <script>
 import Header from "./components/icecream/Header.vue";
-import HeroTitle from "./components/icecream/HeroTitle.vue";
-import HeroPrice from "./components/icecream/HeroPrice.vue";
+import Hero from "./components/icecream/Hero.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    HeroTitle,
-    HeroPrice,
+    Hero,
   },
   data() {
     return {};
@@ -26,7 +23,8 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Inter, DM Sans, Seymour One, Helvetica, Arial,
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center;

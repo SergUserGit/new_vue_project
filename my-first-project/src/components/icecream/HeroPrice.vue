@@ -35,6 +35,7 @@ export default {
 
 .descimg {
   border-radius: 50%;
+  z-index: 1;
 }
 
 .price-list {
@@ -58,12 +59,14 @@ export default {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
+  font-family: "Montserrat", sans-serif;
 }
 
 .span-two {
   font-weight: 400;
   font-size: 14px;
   color: #fcfcfc;
+  font-family: "Montserrat", sans-serif;
 }
 
 .group-price {

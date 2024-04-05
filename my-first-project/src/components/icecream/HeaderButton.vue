@@ -25,6 +25,7 @@ export default {
   font-size: 14px;
   text-align: center;
   color: #000;
+  font-family: "Montserrat", sans-serif;
 }
 
 .ref-button {

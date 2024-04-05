@@ -42,6 +42,7 @@ export default {
   width: 350px;
   margin: 0;
   margin-bottom: 35px;
+  font-family: "Seymour One", sans-serif;
 }
 
 .hero-section {
@@ -60,6 +61,7 @@ export default {
   padding-right: 34px;
   padding-top: 12px;
   padding-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero-howmade {
@@ -68,6 +70,7 @@ export default {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #f8d24e;
+  font-family: "Montserrat", sans-serif;
 }
 
 .ref-groups {
@@ -85,6 +88,7 @@ export default {
   width: 190px;
   margin: 0;
   margin-bottom: 35px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .icegroup {
@@ -95,5 +99,6 @@ export default {
 
 .img-fone {
   border-radius: 50%;
+  z-index: 1;
 }
 </style>

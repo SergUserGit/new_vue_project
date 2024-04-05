@@ -23,6 +23,7 @@ export default {
   font-size: 21px;
   letter-spacing: -0.1em;
   text-align: center;
+  font-family: "Seymour One", sans-serif;
 }
 .logo-group {
   display: flex;

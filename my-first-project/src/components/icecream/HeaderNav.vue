@@ -2,7 +2,9 @@
   <div>
     <nav class="header-nav">
       <ul class="nav-list">
-        <li><a class="nav-ref" href="#">Home</a></li>
+        <li>
+          <a class="nav-ref" href="#">Home</a>
+        </li>
         <li><a class="nav-ref" href="#">How it's made?</a></li>
         <li><a class="nav-ref" href="#">Our products</a></li>
         <li><a class="nav-ref" href="#">Contact</a></li>
@@ -17,7 +19,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .nav-list {
   display: flex;
   gap: 25px;
@@ -31,6 +33,7 @@ export default {
   font-weight: 700;
   font-size: 16px;
   color: #fcfcfc;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-ref:hover {
