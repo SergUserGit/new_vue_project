@@ -2,6 +2,7 @@
   <div class="natural">
     <Container>
       <NaturalTitles />
+      <NaturalItems />
     </Container>
   </div>
 </template>
@@ -9,9 +10,10 @@
 <script>
 import Container from "./Container.vue";
 import NaturalTitles from "./NaturalTitles.vue";
+import NaturalItems from "./NaturalItems.vue";
 export default {
   name: "Natural",
-  components: { Container, NaturalTitles },
+  components: { Container, NaturalTitles, NaturalItems },
 };
 </script>
 
