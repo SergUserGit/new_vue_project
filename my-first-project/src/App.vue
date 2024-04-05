@@ -1,17 +1,20 @@
 <template>
   <Header />
   <Hero />
+  <Natural />
 </template>
 
 <script>
 import Header from "./components/icecream/Header.vue";
 import Hero from "./components/icecream/Hero.vue";
+import Natural from "./components/icecream/Natural.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Hero,
+    Natural,
   },
   data() {
     return {};
