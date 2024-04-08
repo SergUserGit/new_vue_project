@@ -2,12 +2,14 @@
   <Header />
   <Hero />
   <Natural />
+  <HowItsMade/>
 </template>
 
 <script>
 import Header from "./components/icecream/Header.vue";
 import Hero from "./components/icecream/Hero.vue";
 import Natural from "./components/icecream/Natural.vue";
+import HowItsMade from "./components/icecream/HowItsMade.vue";
 
 export default {
   name: "App",
@@ -15,6 +17,7 @@ export default {
     Header,
     Hero,
     Natural,
+    HowItsMade
   },
   data() {
     return {};
