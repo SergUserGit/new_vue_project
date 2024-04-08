@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="group-items">
     <ul class="items-list">
       <li class="items-list-item">
         <img class="item-img item-title__upper" :src="itmone" alt="item one" />
@@ -94,5 +94,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.group-items {
+  margin-bottom: 182px;
 }
 </style>

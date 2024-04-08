@@ -29,6 +29,5 @@ export default {
 .how_its_made {
   background: #84a178;
   padding-top: 65px;
-  padding-bottom: 182px;
 }
 </style>
