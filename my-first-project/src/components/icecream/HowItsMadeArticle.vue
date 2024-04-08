@@ -16,7 +16,10 @@
           coffee for any mood!
         </p>
       </div>
-      <a href="#">Read more</a>
+      <a href="#" class="how-its-ref"
+        ><span class="how-its-span">Read more</span
+        ><img :src="howitsarr" alt="arrow ref"
+      /></a>
     </div>
   </div>
 </template>
@@ -24,6 +27,7 @@
 <script>
 import cow_fone from "./images/cow_fone.png";
 import cow_img from "./images/cow_img.jpg";
+import how_its_arrow from "./images/how_its_arrow.svg";
 
 export default {
   name: "HowItsMadeArticle",
@@ -31,6 +35,7 @@ export default {
     return {
       cowfone: cow_fone,
       cowimg: cow_img,
+      howitsarr: how_its_arrow,
     };
   },
 };
@@ -85,5 +90,27 @@ export default {
   flex-direction: column;
   gap: 23px;
   margin-bottom: 55px;
+}
+
+.how-its-ref {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 37px;
+  padding-left: 37px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  background: #f8d24e;
+  width: 100px;
+}
+
+.how-its-span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  color: #000;
 }
 </style>
