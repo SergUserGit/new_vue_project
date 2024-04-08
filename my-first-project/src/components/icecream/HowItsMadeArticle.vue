@@ -1,15 +1,6 @@
 <template>
   <div class="group-article">
-    <div class="group-image-fone">
-      <img :src="cowfone" alt="cow fone" width="490" height="490" />
-      <img
-        class="cow_img"
-        :src="cowimg"
-        alt="cow img"
-        width="490"
-        height="490"
-      />
-    </div>
+    <img class="cow_img" :src="cowimg" alt="cow img" width="490" height="490" />
     <div class="group-ph">
       <div class="group-articles-ph">
         <p class="group-articles-ph-one">
@@ -48,7 +39,7 @@ export default {
 <style lang="scss" scoped>
 .cow_img {
   border-radius: 50%;
-  transform: translateY(-88%);
+  box-shadow: 0px -30px 0px #f8d24e;
 }
 
 .group-image-fone {
@@ -62,6 +53,7 @@ export default {
   gap: 110px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 61px;
 }
 
 .group-articles-ph-one {
