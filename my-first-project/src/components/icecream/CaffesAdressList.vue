@@ -4,7 +4,7 @@
       <li class="list-caffe-item">
         <a href="#">CAFE</a>
         <h2 class="name_city">Chicago</h2>
-        <a class="ref-city" href="#"
+        <a class="ref-city adress_one" href="#"
           >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
         >
         <img :src="lncity" alt="line city" />
@@ -63,9 +63,16 @@ export default {
 }
 
 .list-caffe-item {
+  width: 368px;
   border-radius: 24px;
   box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
   background: #fff;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .range_dateone {
@@ -127,5 +134,10 @@ export default {
   line-height: 150%;
   color: #131313;
   font-family: "Montserrat", sans-serif;
+}
+
+.adress_one {
+  display: block;
+  width: 262px;
 }
 </style>
