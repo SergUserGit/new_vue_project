@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="refs-addres">
     <ul class="list-addres">
       <li>
         <a class="ref-style ref-one" href="#"

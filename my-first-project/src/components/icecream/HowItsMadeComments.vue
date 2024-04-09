@@ -27,5 +27,6 @@ export default {
   background-image: url("./images/comments_fone.jpg");
   padding-top: 465px;
   position: relative;
+  padding-bottom: 90px;
 }
 </style>

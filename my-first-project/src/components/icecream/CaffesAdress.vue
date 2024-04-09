@@ -24,6 +24,8 @@ export default {
 <style lang="scss" scoped>
 .caffes_addres {
   background: #84a178;
-  padding-top: 475px;
+  position: relative;
+  padding-top: 472px;
+  padding-bottom: 122px;
 }
 </style>
