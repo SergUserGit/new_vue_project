@@ -4,7 +4,8 @@
   <Natural />
   <HowItsMade />
   <HowItsMadeComments />
-  <CaffesAdress/>
+  <CaffesAdress />
+  <Footer />
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import Natural from "./components/icecream/Natural.vue";
 import HowItsMade from "./components/icecream/HowItsMade.vue";
 import HowItsMadeComments from "./components/icecream/HowItsMadeComments.vue";
 import CaffesAdress from "./components/icecream/CaffesAdress.vue";
+import Footer from "./components/icecream/Footer.vue";
 
 export default {
   name: "App",
@@ -23,7 +25,8 @@ export default {
     Natural,
     HowItsMade,
     HowItsMadeComments,
-    CaffesAdress
+    CaffesAdress,
+    Footer,
   },
   data() {
     return {};
