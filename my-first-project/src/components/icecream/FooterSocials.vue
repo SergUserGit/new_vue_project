@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="group-social">
     <ul class="social_list">
       <li><img :src="gitpng" alt="git" /></li>
       <li><img :src="telegpng" alt="teleg" /></li>
@@ -60,5 +60,11 @@ export default {
   letter-spacing: 0.02em;
   font-family: "Montserrat", sans-serif;
   color: #fff;
+}
+
+.group-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 </style>
