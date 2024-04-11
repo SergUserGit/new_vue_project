@@ -30,13 +30,48 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.list-addres {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 17px;
-  justify-content: center;
+@media screen and (min-width: 1200px) {
+  .list-addres {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .list-addres {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .list-addres {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-addres {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+  }
 }
 
 .ref-style {

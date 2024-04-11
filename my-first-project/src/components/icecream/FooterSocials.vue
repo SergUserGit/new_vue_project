@@ -30,13 +30,48 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.social_list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin-bottom: 53px;
+@media screen and (min-width: 1200px) {
+  .social_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 53px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .social_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .social_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
 }
 
 .social-ph {
@@ -44,22 +79,84 @@ export default {
   padding: 0;
 }
 
-.social-ph-one {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
-  color: #131313;
-  font-family: "Montserrat", sans-serif;
+@media screen and (min-width: 1200px) {
+  .social-ph-one {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #131313;
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
-.social-ph-two {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .social-ph-one {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    color: #131313;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .social-ph-one {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-ph-one {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-ph-two {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .social-ph-two {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    color: #fcfcfc;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .social-ph-two {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    font-family: "Montserrat", sans-serif;
+    color: #fcfcfc;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-ph-two {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    font-family: "Montserrat", sans-serif;
+    color: #fcfcfc;
+  }
 }
 
 .group-social {
