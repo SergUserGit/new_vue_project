@@ -1,6 +1,27 @@
 <template>
   <div class="group-article">
     <img class="cow_img" :src="cowimg" alt="cow img" width="490" height="490" />
+    <img
+      class="cow_img_mobe_one"
+      :src="cowimgmobone"
+      alt="cow img"
+      width="279"
+      height="278"
+    />
+    <img
+      class="cow_img_mobe_two"
+      :src="cowimgmobtwo"
+      alt="cow img"
+      width="279"
+      height="278"
+    />
+    <img
+      class="cow_img_tablet"
+      :src="cowimgtabl"
+      alt="cow img"
+      width="330"
+      height="330"
+    />
     <div class="group-ph">
       <div class="group-articles-ph">
         <p class="group-articles-ph-one">
@@ -27,6 +48,10 @@
 <script>
 import cow_fone from "./images/cow_fone.png";
 import cow_img from "./images/cow_img.jpg";
+import cow_img_mobone from "./images/cow_img_mobone.jpg";
+import cow_img_mobtwo from "./images/cow_img_mobtwo.jpg";
+import cow_img_tablet from "./images/cow_img_tablet.jpg";
+
 import how_its_arrow from "./images/how_its_arrow.svg";
 
 export default {
@@ -36,15 +61,117 @@ export default {
       cowfone: cow_fone,
       cowimg: cow_img,
       howitsarr: how_its_arrow,
+      cowimgmobone: cow_img_mobone,
+      cowimgmobtwo: cow_img_mobtwo,
+      cowimgtabl: cow_img_tablet,
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.cow_img {
-  border-radius: 50%;
-  box-shadow: 0px -30px 0px #f8d24e;
+@media screen and (min-width: 1200px) {
+  .cow_img {
+    display: inline;
+    border-radius: 50%;
+    box-shadow: 0px -30px 0px #f8d24e;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .cow_img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .cow_img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cow_img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .cow_img_mobe_one {
+    display: inline;
+    border-radius: 50%;
+    box-shadow: 0px -17px 0px #f8d24e;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cow_img_mobe_one {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .cow_img_mobe_one {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cow_img_mobe_one {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .cow_img_mobe_two {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cow_img_mobe_two {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .cow_img_mobe_two {
+    display: inline;
+    border-radius: 50%;
+    box-shadow: 0px -17px 0px #f8d24e;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cow_img_mobe_two {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .cow_img_tablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cow_img_tablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .cow_img_tablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cow_img_tablet {
+    display: inline;
+    border-radius: 50%;
+    box-shadow: 0px -20px 0px #f8d24e;
+  }
 }
 
 .group-image-fone {
@@ -53,12 +180,44 @@ export default {
   position: relative;
 }
 
-.group-article {
-  display: flex;
-  gap: 110px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 61px;
+@media screen and (min-width: 1200px) {
+  .group-article {
+    display: flex;
+    gap: 110px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 61px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .group-article {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 57px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .group-article {
+    display: flex;
+    gap: 38px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 47px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .group-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 65px;
+    gap: 39px;
+  }
 }
 
 .group-articles-ph-one {
