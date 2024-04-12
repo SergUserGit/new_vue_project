@@ -5,6 +5,7 @@
         <HeaderWrapper>
           <HeaderLogo />
           <HeaderNav />
+          <HeaderMenuButton />
           <HeaderButton />
         </HeaderWrapper>
       </Container>
@@ -18,6 +19,7 @@ import HeaderLogo from "./HeaderLogo.vue";
 import HeaderButton from "./HeaderButton.vue";
 import Container from "./Container.vue";
 import HeaderWrapper from "./HeaderWrapper.vue";
+import HeaderMenuButton from "./HeaderMenuButton.vue";
 
 export default {
   name: "Header",
@@ -27,6 +29,7 @@ export default {
     HeaderButton,
     Container,
     HeaderWrapper,
+    HeaderMenuButton,
   },
 };
 </script>

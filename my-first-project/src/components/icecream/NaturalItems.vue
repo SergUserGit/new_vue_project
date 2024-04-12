@@ -67,13 +67,48 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.items-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
+@media screen and (min-width: 1200px) {
+  .items-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .items-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 59px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .items-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .items-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
 }
 
 .items-list-one {
