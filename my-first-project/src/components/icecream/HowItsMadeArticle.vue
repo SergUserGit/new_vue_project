@@ -219,36 +219,154 @@ export default {
     gap: 39px;
   }
 }
-
-.group-articles-ph-one {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 176%;
-  letter-spacing: 0.04em;
-  width: 463px;
-  font-family: "Montserrat", sans-serif;
-  color: #fcfcfc;
+@media screen and (min-width: 1200px) {
+  .group-articles-ph-one {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    width: 463px;
+    font-family: "Montserrat", sans-serif;
+    color: #fcfcfc;
+  }
 }
 
-.group-articles-ph-two {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 194%;
-  letter-spacing: 0.04em;
-  width: 463px;
-  font-family: "Montserrat", sans-serif;
-  color: #fcfcfc;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .group-articles-ph-one {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #fcfcfc;
+    width: 220px;
+  }
 }
 
-.group-articles-ph {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  margin-bottom: 55px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .group-articles-ph-one {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #fcfcfc;
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .group-articles-ph-one {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    font-family: "Montserrat", sans-serif;
+    color: #fcfcfc;
+    width: 334px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .group-articles-ph-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    width: 463px;
+    font-family: "Montserrat", sans-serif;
+    color: #fcfcfc;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .group-articles-ph-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 162%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #fcfcfc;
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .group-articles-ph-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 162%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #fcfcfc;
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .group-articles-ph-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    font-family: "Montserrat", sans-serif;
+    color: #fcfcfc;
+    width: 334px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .group-articles-ph {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-bottom: 55px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .group-articles-ph {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .group-articles-ph {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .group-articles-ph {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .how-its-ref {
@@ -271,5 +389,21 @@ export default {
   font-size: 14px;
   line-height: 129%;
   color: #000;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .group-ph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .group-ph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>
