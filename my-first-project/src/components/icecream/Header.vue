@@ -10,7 +10,7 @@
         </HeaderWrapper>-->
       </Container>
     </header>
-    <MobileMenuOne />
+    <MobileMenuTwo />
   </div>
 </template>
 
@@ -25,6 +25,7 @@ import HeaderWrapperDesktop from "./HeaderWrapperDesktop.vue";
 import HeaderWpapperTablet from "./HeaderWpapperTablet.vue";
 import TabletMenu from "./TabletMenu.vue";
 import MobileMenuOne from "./MobileMenuOne.vue";
+import MobileMenuTwo from "./MobileMenuTwo.vue";
 
 export default {
   name: "Header",
@@ -39,6 +40,7 @@ export default {
     HeaderWpapperTablet,
     TabletMenu,
     MobileMenuOne,
+    MobileMenuTwo,
   },
 };
 </script>

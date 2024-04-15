@@ -1,16 +1,16 @@
 <template>
-  <div class="mobile-menu-one">
-    <div class="mobile-header-one">
-      <img :src="logomobeone" alt="logo mob" />
+  <div class="mobile-menu-two">
+    <div class="mobile-header-two">
+      <img :src="logomobetwo" alt="logo mob" />
       <button class="btn-close">
         <img :src="btnclose" alt="btn close" />
       </button>
     </div>
     <ul class="ref-list">
-      <li><a class="mobile-one-ref" href="#">Home</a></li>
-      <li><a class="mobile-one-ref" href="#">How it's made?</a></li>
-      <li><a class="mobile-one-ref" href="#">Our products</a></li>
-      <li><a class="mobile-one-ref" href="#">Contact</a></li>
+      <li><a class="mobile-two-ref" href="#">Home</a></li>
+      <li><a class="mobile-two-ref" href="#">How it's made?</a></li>
+      <li><a class="mobile-two-ref" href="#">Our products</a></li>
+      <li><a class="mobile-two-ref" href="#">Contact</a></li>
     </ul>
     <div class="group_button_buy">
       <button class="button_buy">
@@ -22,15 +22,14 @@
 </template>
 
 <script>
-import logo_mobile_one from "./images/logo_mobile_one.svg";
+import logo_mobile_two from "./images/logo_mobile_two.svg";
 import button_close from "./images/button_close.svg";
 import arr_btn from "./images/arr_btn.svg";
-
 export default {
-  name: "MobileMenuOne",
+  name: "MobileMenuTwo",
   data() {
     return {
-      logomobeone: logo_mobile_one,
+      logomobetwo: logo_mobile_two,
       btnclose: button_close,
       arr: arr_btn,
     };
@@ -39,20 +38,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.mobile-menu-one {
+.mobile-menu-two {
   background: #84a178;
-  width: 480px;
-  padding-top: 20px;
-  padding-bottom: 88px;
-  padding-left: 112px;
-  padding-right: 114px;
+  width: 320px;
+  padding-top: 12px;
+  padding-bottom: 62px;
+  padding-left: 34px;
+  padding-right: 33px;
 }
 
-.mobile-header-one {
+.mobile-header-two {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 59px;
 }
 
 .btn-close {
@@ -67,13 +66,13 @@ export default {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 42px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 152px;
+  margin-bottom: 114px;
 }
 
-.mobile-one-ref {
+.mobile-two-ref {
   text-decoration: none;
   font-weight: 700;
   font-size: 32px;
@@ -82,7 +81,7 @@ export default {
   transition: color 300ms linear;
 }
 
-.mobile-one-ref:hover {
+.mobile-two-ref:hover {
   color: #131313;
 }
 
@@ -101,8 +100,8 @@ export default {
   gap: 10px;
   border-radius: 10px;
   background: #f8d24e;
-  padding-left: 39px;
-  padding-right: 39px;
+  padding-right: 38px;
+  padding-left: 38px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
