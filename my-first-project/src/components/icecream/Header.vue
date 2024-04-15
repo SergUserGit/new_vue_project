@@ -2,19 +2,15 @@
   <div>
     <header class="header">
       <Container>
-        <HeaderWrapper>
+        <!--     <HeaderWrapper>
           <HeaderLogo />
           <HeaderWrapperDesktop />
           <HeaderWpapperTablet />
           <HeaderMenuButton />
-          <!-- <HeaderWrapperDesktop />-->
-          <!-- <HeaderLogo />
-          <HeaderNav />
-          <HeaderMenuButton />
-          <HeaderButton />-->
-        </HeaderWrapper>
+        </HeaderWrapper>-->
       </Container>
     </header>
+    <MobileMenuOne />
   </div>
 </template>
 
@@ -27,6 +23,8 @@ import HeaderWrapper from "./HeaderWrapper.vue";
 import HeaderMenuButton from "./HeaderMenuButton.vue";
 import HeaderWrapperDesktop from "./HeaderWrapperDesktop.vue";
 import HeaderWpapperTablet from "./HeaderWpapperTablet.vue";
+import TabletMenu from "./TabletMenu.vue";
+import MobileMenuOne from "./MobileMenuOne.vue";
 
 export default {
   name: "Header",
@@ -39,6 +37,8 @@ export default {
     HeaderMenuButton,
     HeaderWrapperDesktop,
     HeaderWpapperTablet,
+    TabletMenu,
+    MobileMenuOne,
   },
 };
 </script>

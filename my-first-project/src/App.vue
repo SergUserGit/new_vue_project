@@ -1,11 +1,11 @@
 <template>
   <Header />
-  <Hero />
+  <!-- <Hero />
   <Natural />
   <HowItsMade />
   <HowItsMadeComments />
   <CaffesAdress />
-  <Footer />
+  <Footer />-->
 </template>
 
 <script>
