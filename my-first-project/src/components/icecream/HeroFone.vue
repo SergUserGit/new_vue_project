@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
 .group-points {
   position: absolute;
-  transform: translateY(-95%);
+  transform: translateY(-100%);
   z-index: 0;
 }
 </style>

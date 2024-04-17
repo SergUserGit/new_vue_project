@@ -7,6 +7,7 @@
     </div>
     <div class="icegroup">
       <img class="img-fone" :src="icefone" alt="fone" />
+      <img class="img-fone-tblt" :src="icefonetbl" alt="fone" />
       <div>
         <p class="hero-ph">
           Indulge in a scoop of ice cream made with passion and treat your taste
@@ -21,12 +22,15 @@
 <script>
 import many_ice from "./images/many_ice.jpg";
 import arrow from "./images/arrow.svg";
+import many_ice_tablet from "./images/plate_tablet.jpg";
+
 export default {
   name: "HeroTitle",
   data() {
     return {
       icefone: many_ice,
       arrowimg: arrow,
+      icefonetbl: many_ice_tablet,
     };
   },
 };
@@ -41,7 +45,7 @@ export default {
   color: #fcfcfc;
   width: 350px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-family: "Seymour One", sans-serif;
 }
 
@@ -77,7 +81,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
 }
 
 .hero-ph {
@@ -97,8 +101,55 @@ export default {
   gap: 20px;
 }
 
-.img-fone {
-  border-radius: 50%;
-  z-index: 1;
+@media screen and (min-width: 1200px) {
+  .img-fone {
+    display: block;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .img-fone {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .img-fone {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .img-fone {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .img-fone-tblt {
+    display: block;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-fone-tblt {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .img-fone-tblt {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .img-fone-tblt {
+    display: none;
+  }
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <div class="tablet-menu">
+  <div v-show="this.isOpenThisForm && this.isVisible" class="tablet-menu">
     <div class="tablet-header">
       <img :src="logotabl" alt="logo tablet" />
-      <button class="btn-close">
+      <button @click="closeform" class="btn-close">
         <img :src="btnclose" alt="btn close" />
       </button>
     </div>
@@ -25,19 +25,60 @@ export default {
     return {
       logotabl: logo_menu_tablet,
       btnclose: button_close,
+      isVisible: true,
+      formclose: false,
     };
+  },
+  methods: {
+    closeform() {
+      this.isVisible = false;
+    },
+  },
+  props: {
+    isOpenThisForm: Boolean,
+    isOpenVisible: Boolean,
+  },
+  computed: {
+    thisSwow() {
+      return this.isVisible;
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.tablet-menu {
-  background: #84a178;
-  width: 768px;
-  padding-top: 20px;
-  padding-left: 32px;
-  padding-right: 40px;
-  padding-bottom: 533px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet-menu {
+    display: block;
+    background: #84a178;
+    width: 768px;
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-right: 40px;
+    padding-bottom: 533px;
+    position: absolute;
+    transform: translateY(0%);
+    transform: translateX(-65%);
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .tablet-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .tablet-menu {
+    display: none;
+  }
 }
 
 .btn-close {

@@ -2,6 +2,7 @@
   <div class="hero-section-price">
     <div class="group-price">
       <img class="descimg" :src="descimage" alt="many ice" />
+      <img class="tablimage" :src="tablimage" alt="many ice" />
       <ul class="price-list">
         <li class="span-group">
           <span class="span-one">16</span>
@@ -18,11 +19,14 @@
 
 <script>
 import icedesctop from "./images/desktopsvg.svg";
+import ice_tablet from "./images/ice_tablet.svg";
+
 export default {
   name: "HeroPrice",
   data() {
     return {
       descimage: icedesctop,
+      tablimage: ice_tablet,
     };
   },
 };
@@ -33,9 +37,56 @@ export default {
   background: #84a178;
 }
 
-.descimg {
-  border-radius: 50%;
-  z-index: 1;
+@media screen and (min-width: 1200px) {
+  .descimg {
+    display: block;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .descimg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .descimg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .descimg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablimage {
+    display: block;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablimage {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .tablimage {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .tablimage {
+    display: none;
+  }
 }
 
 .price-list {

@@ -1,18 +1,42 @@
 <template>
-  <div class="HeaderTablet">
-    <HeaderMenuButtonTablet />
-    <HeaderButton />
+  <div class="wrap-tablet">
+    <div class="HeaderTablet">
+      <HeaderMenuButtonTablet @formopen="onFormOpen" />
+      <HeaderButton />
+    </div>
+    <TabletMenu
+      :isOpenThisForm="this.formopen"
+      :isOpenVisible="!this.formclose"
+      @formclose="onformclose"
+    />
   </div>
 </template>
 
 <script>
 import HeaderButton from "./HeaderButton.vue";
 import HeaderMenuButtonTablet from "./HeaderMenuButtonTablet.vue";
+import TabletMenu from "./TabletMenu.vue";
 export default {
   name: "HeaderWpapperTablet",
   components: {
     HeaderButton,
     HeaderMenuButtonTablet,
+    TabletMenu,
+  },
+  data() {
+    return {
+      formopen: false,
+      formclose: false,
+    };
+  },
+
+  methods: {
+    onFormOpen(data) {
+      this.formopen = data;
+    },
+    onformclose(data) {
+      this.formclose = data;
+    },
   },
 };
 </script>
@@ -43,5 +67,9 @@ export default {
   .HeaderTablet {
     display: none;
   }
+}
+
+.wrap-tablet {
+  position: relative;
 }
 </style>

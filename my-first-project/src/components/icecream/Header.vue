@@ -2,15 +2,15 @@
   <div>
     <header class="header">
       <Container>
-        <!--     <HeaderWrapper>
+        <HeaderWrapper>
           <HeaderLogo />
           <HeaderWrapperDesktop />
           <HeaderWpapperTablet />
           <HeaderMenuButton />
-        </HeaderWrapper>-->
+        </HeaderWrapper>
+        <!--  <TabletMenu />-->
       </Container>
     </header>
-    <MobileMenuTwo />
   </div>
 </template>
 
@@ -50,5 +50,7 @@ export default {
   background: #84a178;
   padding-top: 13px;
   padding-bottom: 13px;
+  position: relative;
+  z-index: 1;
 }
 </style>

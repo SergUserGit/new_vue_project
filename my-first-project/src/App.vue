@@ -1,7 +1,7 @@
 <template>
   <Header />
-  <!-- <Hero />
-  <Natural />
+  <Hero />
+  <!--<Natural />
   <HowItsMade />
   <HowItsMadeComments />
   <CaffesAdress />

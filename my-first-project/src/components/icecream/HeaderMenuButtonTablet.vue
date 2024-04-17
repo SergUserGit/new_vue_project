@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="menu_btn">
+    <button @click="formopen" class="menu_btn">
       <img :src="mnbtm" alt="menu button" />
     </button>
   </div>
@@ -13,7 +13,13 @@ export default {
   data() {
     return {
       mnbtm: menu_button,
+      isopen: true,
     };
+  },
+  methods: {
+    formopen() {
+      this.$emit("formopen", this.isopen);
+    },
   },
 };
 </script>
