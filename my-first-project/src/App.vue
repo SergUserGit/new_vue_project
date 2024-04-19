@@ -1,8 +1,8 @@
 <template>
   <Header />
   <Hero />
-  <!--<Natural />
-  <HowItsMade />
+  <Natural />
+  <!--<HowItsMade />
   <HowItsMadeComments />
   <CaffesAdress />
   <Footer />-->

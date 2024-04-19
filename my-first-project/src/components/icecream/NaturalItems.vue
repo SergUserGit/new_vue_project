@@ -111,50 +111,198 @@ export default {
   }
 }
 
-.items-list-one {
-  width: 370px;
-  height: 536px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("./images/ice_cream_one.png");
-  border-radius: 24px;
-  box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 85px;
-  align-items: center;
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .items-list-one {
+    width: 370px;
+    height: 536px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/ice_cream_one.png");
+    border-radius: 24px;
+    box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    align-items: center;
+    position: relative;
+  }
 }
 
-.items-list-two {
-  width: 370px;
-  height: 536px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("./images/ice_cream_two.png");
-  border-radius: 24px;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  position: relative;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .items-list-one {
+    width: 280px;
+    height: 420px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/ice_cream_one_mobsmall.png");
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    position: relative;
+  }
 }
 
-.items-list-three {
-  width: 370px;
-  height: 536px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("./images/ice_cream_three.png");
-  border-radius: 24px;
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .items-list-one {
+    width: 320px;
+    height: 428px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/ice_cream_one_mobbig.png");
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+    align-items: center;
+    position: relative;
+  }
+}
 
-  align-items: center;
-  position: relative;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .items-list-one {
+    width: 224px;
+    height: 428px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/ice_cream_one_tablet.png");
+    border-radius: 16px;
+    box-shadow: 0 5px 20px 0 rgba(212, 20, 67, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .items-list-two {
+    width: 370px;
+    height: 536px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/ice_cream_two.png");
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .items-list-two {
+    width: 280px;
+    height: 420px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/ice_cream_two_tablet.png");
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .items-list-two {
+    width: 320px;
+    height: 420px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/ice_cream_two_mobbig.png");
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .items-list-two {
+    width: 224px;
+    height: 428px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/ice_cream_two_tablet.png");
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .items-list-three {
+    width: 370px;
+    height: 536px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/ice_cream_three.png");
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .items-list-three {
+    width: 280px;
+    height: 420px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/ice_cream_three_mobsmall.png");
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .items-list-three {
+    width: 320px;
+    height: 428px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/ice_cream_three_mobbig.png");
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .items-list-three {
+    width: 224px;
+    height: 428px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/ice_cream_three_tablet.png");
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    position: relative;
+  }
 }
 
 .img_shape_one {
@@ -172,83 +320,336 @@ export default {
   transform: translateY(-65%);
 }
 
-.item-title {
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  color: #131313;
-  margin-top: 120px;
+@media screen and (min-width: 1200px) {
+  .item-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 120px;
+  }
 }
 
-.item-title-two {
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  color: #131313;
-  margin-top: 120px;
-  margin-bottom: 80px;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .item-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 129px;
+  }
 }
 
-.item-title-three {
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  color: #131313;
-  margin-top: 120px;
-  margin-bottom: 80px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .item-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 129px;
+  }
 }
 
-.item-ph-two {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 176%;
-  letter-spacing: 0.04em;
-  text-align: center;
-  width: 242px;
-  font-family: "Montserrat", sans-serif;
-  color: #131313;
-  margin-bottom: 58px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .item-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 108px;
+  }
 }
 
-.item-ph-three {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 176%;
-  letter-spacing: 0.04em;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  color: #131313;
-  width: 242px;
-  margin-bottom: 65px;
+@media screen and (min-width: 1200px) {
+  .item-title-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
 }
 
-.item-ph {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 176%;
-  letter-spacing: 0.04em;
-  font-family: "Montserrat", sans-serif;
-  color: #131313;
-  width: 246px;
-  text-align: center;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .item-title-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 129px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .item-title-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 129px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .item-title-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 108px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-title-three {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .item-title-three {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 120px;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .item-title-three {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 120px;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .item-title-three {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-top: 108px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-ph-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    width: 242px;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-bottom: 58px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .item-ph-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 200px;
+    margin-bottom: 65px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .item-ph-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 200px;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .item-ph-two {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 172px;
+    margin-bottom: 65px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-ph-three {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 242px;
+    margin-bottom: 65px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .item-ph-three {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 200px;
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-ph {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 246px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .item-ph {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .item-ph {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .item-ph {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 172px;
+  }
 }
 
 .img-ice-one {
