@@ -9,6 +9,23 @@
         </p>
         <img width="40" :src="arr_ittem" alt="ittem-arrow" />
         <img class="img_shape_one" :src="ittem_shape_one" alt="shape one" />
+
+        <img
+          class="img_shape_one_tbl"
+          :src="ittem_shape_one_tbl"
+          alt="shape one"
+        />
+        <img
+          class="img_shape_one_mobsml"
+          :src="ittem_shape_one_mobsml"
+          alt="shape one"
+        />
+        <img
+          class="img_shape_one_mobbig"
+          :src="ittem_shape_one_mobbig"
+          alt="shape one"
+        />
+
         <img class="img-ice-one" :src="ice_one" alt="img one" />
       </li>
       <li class="items-list-two">
@@ -42,6 +59,10 @@
 <script>
 import ittem_arrow from "./images/ittem_arrow.png";
 import shape_one from "./images/shape_one.png";
+import shape_one_tablet from "./images/shape_one_tablet.png";
+import shape_one_mobsmall from "./images/shape_one_mobsmall.png";
+import shape_one_mobbig from "./images/shape_one_mobbig.png";
+
 import shape_two from "./images/shape_two.png";
 import shape_three from "./images/shape_three.png";
 
@@ -57,6 +78,10 @@ export default {
       ittem_shape_one: shape_one,
       ittem_shape_two: shape_two,
       ittem_shape_three: shape_three,
+
+      ittem_shape_one_tbl: shape_one_tablet,
+      ittem_shape_one_mobsml: shape_one_mobsmall,
+      ittem_shape_one_mobbig: shape_one_mobbig,
 
       ice_one: img_ice_one,
       ice_two: img_ice_two,
@@ -86,6 +111,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 59px;
+    align-items: center;
   }
 }
 
@@ -97,6 +123,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    align-items: center;
   }
 }
 
@@ -589,6 +616,38 @@ export default {
     color: #131313;
     width: 200px;
     margin-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .item-ph-three {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 178.57px;
+    margin-bottom: 75px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .item-ph-three {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    width: 172px;
+    margin-bottom: 86px;
   }
 }
 
