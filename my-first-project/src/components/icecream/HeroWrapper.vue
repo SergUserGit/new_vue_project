@@ -16,4 +16,28 @@ export default {
   align-items: center;
   justify-content: space-between;
 }
+
+@media screen and (min-width: 1200px) {
+  .hero-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .hero-wrapper {
+    flex-direction: column;
+  }
+}
 </style>
