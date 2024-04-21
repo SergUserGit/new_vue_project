@@ -120,6 +120,7 @@ export default {
     text-transform: uppercase;
     color: #131313;
     font-family: "Seymour One", sans-serif;
+    margin-bottom: -55px;
   }
 }
 
@@ -131,6 +132,7 @@ export default {
     text-transform: uppercase;
     color: #131313;
     font-family: "Seymour One", sans-serif;
+    margin-bottom: -65px;
   }
 }
 
