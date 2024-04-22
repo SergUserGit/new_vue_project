@@ -19,11 +19,11 @@ export default {
 
 <style lang="scss" scoped>
 .natural {
-  height: 1242px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("./images/icenaturalfone.png");
   padding-top: 70px;
+  padding-bottom: 64px;
 }
 </style>

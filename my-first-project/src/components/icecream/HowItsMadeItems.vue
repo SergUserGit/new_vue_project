@@ -165,6 +165,8 @@ export default {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .item-title {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 48px;
     letter-spacing: 0.04em;
@@ -239,9 +241,5 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.group-items {
-  margin-bottom: 182px;
 }
 </style>
