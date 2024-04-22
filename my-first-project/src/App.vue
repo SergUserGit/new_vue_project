@@ -3,8 +3,8 @@
   <Hero />
   <Natural />
   <HowItsMade />
-  <!--<HowItsMadeComments />
-  <CaffesAdress />
+  <HowItsMadeComments />
+  <!--<CaffesAdress />
   <Footer />-->
 </template>
 

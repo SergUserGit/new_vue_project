@@ -11,7 +11,7 @@
 import ice_caffe_fone from "./images/ice_caffe_fone.jpg";
 import ice_caffe_fone_mobone from "./images/ice_caffe_fone_mobone.jpg";
 import ice_caffe_fone_mobtwo from "./images/ice_caffe_fone_mobtwo.jpg";
-import ice_caffe_fone_tablet from "./images/ice_caffe_fone.jpg";
+import ice_caffe_fone_tablet from "./images/ice_caffe_fone_tablet.jpg";
 
 export default {
   name: "CommentsFone",
@@ -27,10 +27,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.fone_comments {
-  position: absolute;
-  transform: translateY(-225%);
-  left: 25%;
+@media screen and (min-width: 1200px) {
+  .fone_comments {
+    left: 25%;
+    position: absolute;
+    transform: translateY(-225%);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .fone_comments {
+    position: absolute;
+    transform: translateY(-500%);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .fone_comments {
+    position: absolute;
+    transform: translateY(-320%);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .fone_comments {
+    position: absolute;
+    transform: translateY(-250%);
+  }
 }
 
 @media screen and (min-width: 1200px) {

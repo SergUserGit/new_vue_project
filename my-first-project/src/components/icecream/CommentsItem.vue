@@ -117,6 +117,8 @@ export default {
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .descr_ph {
+    margin: 0;
+    padding: 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 255%;
@@ -129,6 +131,8 @@ export default {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .descr_ph {
+    margin: 0;
+    padding: 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 255%;
@@ -140,6 +144,8 @@ export default {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .descr_ph {
+    margin: 0;
+    padding: 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 186%;
@@ -150,15 +156,56 @@ export default {
   }
 }
 
-.usr_name_ph {
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-  font-family: "Montserrat", sans-serif;
-  color: #131313;
-  margin-bottom: 40px;
+@media screen and (min-width: 1200px) {
+  .usr_name_ph {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .usr_name_ph {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .usr_name_ph {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .usr_name_ph {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    font-family: "Montserrat", sans-serif;
+    color: #131313;
+    margin-bottom: 33px;
+  }
 }
 
 .switchs-list {
