@@ -4,8 +4,8 @@
   <Natural />
   <HowItsMade />
   <HowItsMadeComments />
-  <!--<CaffesAdress />
-  <Footer />-->
+  <CaffesAdress />
+  <!--<Footer />-->
 </template>
 
 <script>

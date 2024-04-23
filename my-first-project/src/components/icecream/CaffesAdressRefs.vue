@@ -49,6 +49,7 @@ export default {
     display: flex;
     gap: 17px;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -60,6 +61,7 @@ export default {
     display: flex;
     gap: 17px;
     flex-direction: column;
+    align-items: center;
   }
 }
 
