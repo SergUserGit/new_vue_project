@@ -36,14 +36,14 @@ export default {
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .caffes_addres {
-    padding-top: 1700px;
+    padding-top: 1450px;
     padding-bottom: 70px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .caffes_addres {
-    padding-top: 1620px;
+    padding-top: 1400px;
     padding-bottom: 70px;
   }
 }
