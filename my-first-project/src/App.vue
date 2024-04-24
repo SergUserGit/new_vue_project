@@ -5,7 +5,7 @@
   <HowItsMade />
   <HowItsMadeComments />
   <CaffesAdress />
-  <!--<Footer />-->
+  <Footer />
 </template>
 
 <script>

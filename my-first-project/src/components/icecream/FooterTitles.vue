@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="group-title">
     <h2 class="title-one">homemade ice cream made</h2>
     <h2 class="title-two">with passion</h2>
   </div>
@@ -84,6 +84,8 @@ export default {
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .title-two {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 34px;
     letter-spacing: 0.04em;
@@ -96,6 +98,8 @@ export default {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .title-two {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 34px;
     letter-spacing: 0.04em;
@@ -108,6 +112,8 @@ export default {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .title-two {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 48px;
     letter-spacing: 0.06em;
@@ -115,6 +121,18 @@ export default {
     font-family: "Montserrat", sans-serif;
     color: #fcfcfc;
     width: 352px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .group-title {
+    margin-bottom: 59px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .group-title {
+    margin-bottom: 62px;
   }
 }
 </style>
