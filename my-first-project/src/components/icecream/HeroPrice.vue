@@ -73,7 +73,7 @@ export default {
   .tablimage {
     display: block;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 2;
   }
 }
 

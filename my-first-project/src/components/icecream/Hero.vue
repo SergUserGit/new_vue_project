@@ -33,4 +33,10 @@ export default {
   background: #84a178;
   position: relative;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    z-index: 0;
+  }
+}
 </style>

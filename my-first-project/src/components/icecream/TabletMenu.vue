@@ -1,5 +1,5 @@
 <template>
-  <div v-show="this.isOpenThisForm && this.isVisible" class="tablet-menu">
+  <div v-show="this.isOpenThisForm" class="tablet-menu">
     <div class="tablet-header">
       <img :src="logotabl" alt="logo tablet" />
       <button @click="closeform" class="btn-close">
@@ -25,23 +25,17 @@ export default {
     return {
       logotabl: logo_menu_tablet,
       btnclose: button_close,
-      isVisible: true,
-      formclose: false,
+      formnewclose: false,
     };
   },
   methods: {
     closeform() {
-      this.isVisible = false;
+      this.$emit("formnewclose", this.formnewclose);
     },
   },
   props: {
     isOpenThisForm: Boolean,
     isOpenVisible: Boolean,
-  },
-  computed: {
-    thisSwow() {
-      return this.isVisible;
-    },
   },
 };
 </script>
@@ -59,7 +53,7 @@ export default {
     position: absolute;
     transform: translateY(0%);
     transform: translateX(-65%);
-    z-index: 2;
+    z-index: 3;
   }
 }
 

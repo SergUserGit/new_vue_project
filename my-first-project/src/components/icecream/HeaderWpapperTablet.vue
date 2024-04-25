@@ -6,8 +6,7 @@
     </div>
     <TabletMenu
       :isOpenThisForm="this.formopen"
-      :isOpenVisible="!this.formclose"
-      @formclose="onformclose"
+      @formnewclose="onformnewclose"
     />
   </div>
 </template>
@@ -26,7 +25,6 @@ export default {
   data() {
     return {
       formopen: false,
-      formclose: false,
     };
   },
 
@@ -34,8 +32,8 @@ export default {
     onFormOpen(data) {
       this.formopen = data;
     },
-    onformclose(data) {
-      this.formclose = data;
+    onformnewclose(data) {
+      this.formopen = data;
     },
   },
 };
@@ -71,5 +69,6 @@ export default {
 
 .wrap-tablet {
   position: relative;
+  z-index: 1;
 }
 </style>
