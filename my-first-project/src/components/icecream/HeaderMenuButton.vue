@@ -1,6 +1,6 @@
 <template>
   <div class="group-menu_btn">
-    <button class="menu_btn">
+    <button @click="formopenmobile" class="menu_btn">
       <img :src="mnbtm" alt="menu button" />
     </button>
   </div>
@@ -14,6 +14,11 @@ export default {
     return {
       mnbtm: menu_button,
     };
+  },
+  methods: {
+    formopenmobile() {
+      console.log("123vvv");
+    },
   },
 };
 </script>
